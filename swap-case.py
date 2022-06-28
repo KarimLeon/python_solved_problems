@@ -1,8 +1,7 @@
 def swap_case(s):
     swapped = []
     for letter in s: 
-      if letter == letter.upper(): swapped.append(letter.lower())
-      else: swapped.append(letter.upper())
+      swapped.append(letter.lower()) if letter == letter.upper() else swapped.append(letter.upper())
       
     return ''.join(swapped)
 
